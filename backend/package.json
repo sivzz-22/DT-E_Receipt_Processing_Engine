@@ -1,0 +1,19 @@
+{
+  "name": "e_receipt-backend",
+  "version": "1.0.0",
+  "description": "Backend for E_Receipt project (Node.js/Express)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.1",
+    "multer": "^2.0.2",
+    "tesseract.js": "^6.0.1"
+  }
+}

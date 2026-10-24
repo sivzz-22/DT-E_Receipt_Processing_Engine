@@ -1,0 +1,245 @@
+/* Root styles */
+body[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1f1f1f;
+  --header-bg: #181818;
+  --footer-bg: #181818;
+  --link-color: #00bcd4;
+}
+
+body[data-theme="light"] {
+  --bg-color: #f9f9f9;
+  --text-color: #222222;
+  --card-bg: #ffffff;
+  --header-bg: #ffffff;
+  --footer-bg: #f1f1f1;
+  --link-color: #0077cc;
+}
+
+.dashboard-root {
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: var(--dashboard-bg, #181818);
+}
+
+/* Header */
+.dashboard-header {
+  background: #23272f;
+  padding: 1.2rem 0 0.5rem 0;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.app-title {
+  margin: 0 0 0.5rem 0;
+  color: #4caf50;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.dashboard-navbar-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+  background: #23272f;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+}
+
+/* Navbar left section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Profile Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.profile-avatar-navbar {
+  background: #4caf50;
+  color: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.profile-avatar-navbar:hover {
+  box-shadow: 0 0 0 4px #4caf50;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  background: #23272f;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  padding: 1rem 1.5rem;
+  z-index: 10;
+  min-width: 180px;
+  text-align: left;
+}
+
+.profile-dropdown h3 {
+  margin: 0.2rem 0 0.1rem 0;
+  font-size: 1.1rem;
+}
+
+.profile-dropdown p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  color: #bdbdbd;
+}
+
+.profile-dropdown button {
+  width: 100%;
+  margin: 0.5rem 0 0 0;
+  padding: 0.5rem;
+  background: #31343b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.profile-dropdown button:hover {
+  background: #4caf50;
+}
+
+/* Navbar center links */
+.navbar-center {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-link {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.navbar-link:hover {
+  background: #4caf50;
+}
+
+/* Content Area */
+.dashboard-content-full {
+  flex: 1;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 0;
+  background: var(--dashboard-bg, #181818);
+  border-radius: 0 12px 12px 0;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.dashboard-content-full h2 {
+  margin-bottom: 2rem;
+  color: #4caf50;
+}
+
+.dashboard-card-full {
+  background: #23272f;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  padding: 1.5rem 1.2rem;
+  min-width: 320px;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.dashboard-card-full:hover {
+  box-shadow: 0 6px 24px rgba(76,175,80,0.18);
+  transform: translateY(-4px) scale(1.01);
+}
+
+.dashboard-card-full h3 {
+  margin: 0 0 0.5rem 0;
+  color: #4caf50;
+}
+
+.dashboard-card-full p {
+  margin: 0 0 1rem 0;
+  color: #bdbdbd;
+}
+
+.dashboard-card-full button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.dashboard-card-full button:hover {
+  background: #388e3c;
+}
+
+/* Footer */
+.dashboard-footer {
+  background: #23272f;
+  color: #bdbdbd;
+  text-align: center;
+  padding: 1rem 0 0.5rem 0;
+  border-radius: 12px 12px 0 0;
+  font-size: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+
+/* Theme support */
+body[data-theme='light'] {
+  --dashboard-bg: #f5f5f5;
+}
+body[data-theme='dark'] {
+  --dashboard-bg: #181818;
+}
+@media (max-width: 900px) {
+  .dashboard-content-full {
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+  }
+}
